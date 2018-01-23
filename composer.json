@@ -1,0 +1,16 @@
+{
+    "name": "redzjovi/php-pcare",
+    "type": "library",
+    "require": {
+        "symfony/var-dumper": "^4.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Jovi",
+            "email": "redzjovi@gmail.com"
+        }
+    ]
+}
