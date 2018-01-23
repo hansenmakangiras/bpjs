@@ -2,7 +2,7 @@
     "name": "redzjovi/php-pcare",
     "type": "library",
     "require": {
-        "symfony/var-dumper": "^4.0"
+        "symfony/var-dumper": "^3.4"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^6.3"
@@ -12,5 +12,10 @@
             "name": "Jovi",
             "email": "redzjovi@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "redzjovi\\pcare\\": "src/"
+        }
+    }
 }
