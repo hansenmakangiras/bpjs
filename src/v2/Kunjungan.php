@@ -1,21 +1,21 @@
 <?php
 
-namespace redzjovi\pcare\v1;
+namespace redzjovi\pcare\v2;
 
 use GuzzleHttp\Client;
 
-class Kesadaran extends \redzjovi\pcare\v1\BpjsIntegration
+class Kunjungan extends \redzjovi\pcare\v1\BpjsIntegration
 {
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function get()
+    public function rujukanGet($noKunjungan)
     {
         $response = $this->client->request(
             'GET',
-            'dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kesadaran',
+            'dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/kunjungan/rujukan/'.$noKunjungan,
             ['headers' => $this->headers]
         )
         ->getBody()->getContents();
