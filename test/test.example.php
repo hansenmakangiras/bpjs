@@ -16,6 +16,14 @@ $pcare = new \redzjovi\pcare\v1\BpjsIntegration();
 $pcare->initialize($config);
 dump($pcare);
 
-$diagnosa = new \redzjovi\pcare\v1\Diagnosa();
-$response = $diagnosa->initialize($config)->get();
+// $diagnosa = new \redzjovi\pcare\v1\Diagnosa();
+// $response = $diagnosa->initialize($config)->get();
+// dump($response);
+
+// $dokter = new \redzjovi\pcare\v1\Dokter();
+// $response = $dokter->initialize($config)->get();
+// dump($response);
+
+$kesadaran = new \redzjovi\pcare\v1\Kesadaran();
+$response = $kesadaran->initialize($config)->get();
 dump($response);
