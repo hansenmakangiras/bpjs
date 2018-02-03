@@ -78,3 +78,68 @@ TBA
 $kunjungan = new \redzjovi\pcare\v1\Kunjungan();
 $response = $kunjungan->delete('0114A0260815Y000002');
 ```
+
+### $mcu->add($data)
+```php
+$data = [
+    'kdMCU' => 0,
+    'noKunjungan' => '0114U1630815Y000001',
+    'kdProvider' => '1301U007',
+    'tglPelayanan' => '18-08-2015',
+];
+$mcu = new \redzjovi\pcare\v2\Mcu();
+$response = $mcu->add($data);
+```
+### $mcu->add($data)
+```php
+$data = [
+    'kdMCU' => 0,
+    'noKunjungan' => '0114U1630815Y000001',
+    'kdProvider' => '1301U007',
+    'tglPelayanan' => '18-08-2015',
+];
+$mcu = new \redzjovi\pcare\v1\Mcu();
+$response = $mcu->add($data);
+```
+
+### $mcu->edit($data)
+```php
+$data = [
+    'kdMCU' => 0,
+    'noKunjungan' => '0114U1630815Y000001',
+    'kdProvider' => '1301U007',
+    'tglPelayanan' => '18-08-2015',
+];
+$mcu = new \redzjovi\pcare\v2\Mcu();
+$response = $mcu->edit($data);
+```
+
+### $mcu->edit($data)
+```php
+$data = [
+    'kdMCU' => 0,
+    'noKunjungan' => '0114U1630815Y000001',
+    'kdProvider' => '1301U007',
+    'tglPelayanan' => '18-08-2015',
+];
+$mcu = new \redzjovi\pcare\v1\Mcu();
+$response = $mcu->edit($data);
+```
+
+### $mcu->kunjunganGet($noKunjungan)
+```php
+$mcu = new \redzjovi\pcare\v2\Mcu();
+$response = $mcu->kunjunganGet('0000029247423');
+```
+
+### $mcu->kunjunganGet($noKunjungan)
+```php
+$mcu = new \redzjovi\pcare\v1\Mcu();
+$response = $mcu->kunjunganGet('0000029247423');
+```
+
+### $mcu->delete($kdmcu, $noKunjungan)
+```php
+$mcu = new \redzjovi\pcare\v1\Mcu();
+$response = $mcu->delete('34', '1301U0070815Y000005');
+```

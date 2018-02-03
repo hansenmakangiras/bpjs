@@ -13,8 +13,14 @@ class Kunjungan extends \redzjovi\pcare\v1\BpjsIntegration
 
     public function delete($noKunjungan)
     {
-        $response = $this->client->request(
-            'GET',
+        // $response = $this->client->request(
+        //     'DELETE',
+        //     'dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan/rujukan/'.$noKunjungan,
+        //     ['headers' => $this->headers]
+        // )
+        // ->getBody()->getContents();
+
+        $response = $this->client->delete(
             'dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan/rujukan/'.$noKunjungan,
             ['headers' => $this->headers]
         )
