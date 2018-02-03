@@ -64,7 +64,7 @@ class Mcu extends \redzjovi\pcare\v1\BpjsIntegration
                     'json' => $data,
                 ]
             )
-            ->getBody();
+            ->getBody()->getContents();
         } catch (\GuzzleHttp\Exception\ClientException $e) {
             $response = $e->getResponse()->getBody();
         }
@@ -141,7 +141,7 @@ class Mcu extends \redzjovi\pcare\v1\BpjsIntegration
                     'json' => $data,
                 ]
             )
-            ->getBody();
+            ->getBody()->getContents();
         } catch (\GuzzleHttp\Exception\ClientException $e) {
             $response = $e->getResponse()->getBody();
         }
