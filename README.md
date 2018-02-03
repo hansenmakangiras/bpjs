@@ -175,3 +175,32 @@ $response = $mcu->kunjunganGet('0000029247423');
 $mcu = new \redzjovi\pcare\v1\Mcu();
 $response = $mcu->delete('34', '1301U0070815Y000005');
 ```
+
+### $obat->dphoGet($keyword = '', $start = 0, $limit = 10)
+```php
+$obat = new \redzjovi\pcare\v1\Obat();
+$response = $obat->dphoGet('1301', '0', '3');
+```
+
+### $obat->kunjunganGet($noKunjungan)
+```php
+$obat = new \redzjovi\pcare\v1\Obat();
+$response = $obat->kunjunganGet('1301U0070815Y000004');
+```
+
+### $obat->kunjunganAdd($data)
+```php
+$data = [
+    'kdObatSK' => 0,
+    'noKunjungan' => '1301U0070815Y000004',
+    'racikan' => true,
+];
+$obat = new \redzjovi\pcare\v1\Obat();
+$response = $obat->kunjunganAdd($data);
+```
+
+### $obat->kunjunganDelete($kdObatSK, $noKunjungan)
+```php
+$obat = new \redzjovi\pcare\v1\Obat();
+$response = $obat->kunjunganDelete('13', '1301U0070815Y000004');
+```

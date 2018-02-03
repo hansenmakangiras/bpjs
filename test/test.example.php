@@ -131,3 +131,24 @@ dump($pcare);
 // $mcu = new \redzjovi\pcare\v1\Mcu();
 // $response = $mcu->initialize($config)->delete('34', '1301U0070815Y000005');
 // dump($response);
+
+// $obat = new \redzjovi\pcare\v1\Obat();
+// $response = $obat->initialize($config)->dphoGet('1301', '0', '3');
+// dump($response);
+
+// $obat = new \redzjovi\pcare\v1\Obat();
+// $response = $obat->initialize($config)->kunjunganGet('1301U0070815Y000004');
+// dump($response);
+
+// $data = [
+//     'kdObatSK' => 0,
+//     'noKunjungan' => '1301U0070815Y000004',
+//     'racikan' => true,
+// ];
+// $obat = new \redzjovi\pcare\v1\Obat();
+// $response = $obat->initialize($config)->kunjunganAdd($data);
+// dump($response);
+
+// $obat = new \redzjovi\pcare\v1\Obat();
+// $response = $obat->initialize($config)->kunjunganDelete('13', '1301U0070815Y000004');
+// dump($response);
