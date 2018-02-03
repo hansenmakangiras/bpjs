@@ -28,18 +28,52 @@ dump($pcare);
 // $response = $kesadaran->initialize($config)->get();
 // dump($response);
 
-// // need Jovi
 // $kunjungan = new \redzjovi\pcare\v2\Kunjungan();
 // $response = $kunjungan->initialize($config)->rujukanGet('0114U1630316Y000003');
 // dump($response);
 
-// // need Jovi
 // $kunjungan = new \redzjovi\pcare\v1\Kunjungan();
 // $response = $kunjungan->initialize($config)->rujukanGet('0114U1630316Y000003');
 // dump($response);
 
 // $kunjungan = new \redzjovi\pcare\v1\Kunjungan();
 // $response = $kunjungan->initialize($config)->riwayatGet('0000029247423');
+// dump($response);
+
+// $data = [
+//     'noKunjungan' => null,
+//     'noKartu' => '0001101521158',
+//     'tglDaftar' => '01-02-2018',
+// ];
+// $kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+// $response = $kunjungan->initialize($config)->add($data);
+// dump($response);
+
+// $data = [
+//     'noKunjungan' => null,
+//     'noKartu' => '0001101521158',
+//     'tglDaftar' => '01-02-2018',
+// ];
+// $kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+// $response = $kunjungan->initialize($config)->add($data);
+// dump($response);
+
+// $data = [
+//     'noKunjungan' => null,
+//     'noKartu' => '0001101521158',
+//     'tglDaftar' => '01-02-2018',
+// ];
+// $kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+// $response = $kunjungan->initialize($config)->edit($data);
+// dump($response);
+
+// $data = [
+//     'noKunjungan' => null,
+//     'noKartu' => '0001101521158',
+//     'tglDaftar' => '01-02-2018',
+// ];
+// $kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+// $response = $kunjungan->initialize($config)->edit($data);
 // dump($response);
 
 // $kunjungan = new \redzjovi\pcare\v1\Kunjungan();

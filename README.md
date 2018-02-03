@@ -62,16 +62,48 @@ $response = $kunjungan->rujukanGet('0000029247423');
 ```
 
 ### $kunjungan->add($data)
-TBA
+```php
+$data = [
+    'noKunjungan' => null,
+    'noKartu' => '0001101521158',
+    'tglDaftar' => '01-02-2018',
+];
+$kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+$response = $kunjungan->add($data);
+```
 
 ### $kunjungan->add($data)
-TBA
+```php
+$data = [
+    'noKunjungan' => null,
+    'noKartu' => '0001101521158',
+    'tglDaftar' => '01-02-2018',
+];
+$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$response = $kunjungan->add($data);
+```
 
 ### $kunjungan->edit($data)
-TBA
+```php
+$data = [
+    'noKunjungan' => null,
+    'noKartu' => '0001101521158',
+    'tglDaftar' => '01-02-2018',
+];
+$kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+$response = $kunjungan->edit($data);
+```
 
 ### $kunjungan->edit($data)
-TBA
+```php
+$data = [
+    'noKunjungan' => null,
+    'noKartu' => '0001101521158',
+    'tglDaftar' => '01-02-2018',
+];
+$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$response = $kunjungan->edit($data);
+```
 
 ### $kunjungan->delete($noKunjungan)
 ```php
