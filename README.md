@@ -269,3 +269,9 @@ $response = $poli->fktpGet('0', '10');
 $poli = new \redzjovi\pcare\v1\Poli();
 $response = $poli->fktlGet('0', '10');
 ```
+
+### $provider->get($start = 0, $limit = 10)
+```php
+$provider = new \redzjovi\pcare\v1\Provider();
+$response = $provider->get('0', '10');
+```

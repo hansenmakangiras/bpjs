@@ -193,3 +193,7 @@ dump($pcare);
 // $poli = new \redzjovi\pcare\v1\Poli();
 // $response = $poli->initialize($config)->fktlGet('0', '10');
 // dump($response);
+
+// $provider = new \redzjovi\pcare\v1\Provider();
+// $response = $provider->initialize($config)->get('0', '10');
+// dump($response);
