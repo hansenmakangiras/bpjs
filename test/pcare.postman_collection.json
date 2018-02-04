@@ -1,0 +1,1603 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pcare",
+		"_postman_id": "45512a16-763b-0d4e-61aa-ef5bc1cd43da",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Diagnosa (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/diagnosa/0/0/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dokter (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/dokter/0/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Kesadaran (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kesadaran",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rujukan v2 (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/kunjungan/rujukan/0114U1630316Y000003",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rujukan v1 (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan/rujukan/0114U1630316Y000003",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Riwayat Kunjungan (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan/peserta/0000029247423",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Kunjungan v2 (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/kunjungan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"noKunjungan\": null,\n    \"noKartu\": \"0001101521158\",\n    \"tglDaftar\": \"01-02-2018\",\n    \"keluhan\": \"keluhan\",\n    \"kdSadar\": \"01\",\n    \"sistole\": 0,\n    \"diastole\": 0,\n    \"beratBadan\": 0,\n    \"tinggiBadan\": 0,\n    \"respRate\": 0,\n    \"heartRate\": 0,\n    \"terapi\": \"catatan\",\n    \"kdProviderRujukLanjut\": \"0112R027\",\n    \"kdStatusPulang\": \"4\",\n    \"tglPulang\": \"16-02-2016\",\n    \"kdDokter\": \"019\",\n    \"kdDiag1\": \"K29.6\",\n    \"kdDiag2\": null,\n    \"kdDiag3\": null,\n    \"kdPoliRujukInternal\": null,\n    \"kdPoliRujukLanjut\": \"TON\",\n    \"kdTacc\": 2,\n    \"alasanTacc\": \"umur sudah lansia\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Kunjungan v1 (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"noKunjungan\": null,\n    \"noKartu\": \"0000029247423\",\n    \"tglDaftar\": \"24-08-2015\",\n    \"keluhan\": \"keluhan\",\n    \"kdSadar\": \"01\",\n    \"sistole\": 0,\n    \"diastole\": 0,\n    \"beratBadan\": 0,\n    \"tinggiBadan\": 0,\n    \"respRate\": 0,\n    \"heartRate\": 0,\n    \"terapi\": \"catatan\",\n    \"kdProviderRujukLanjut\": \"0105R001\",\n    \"kdStatusPulang\": \"3\",\n    \"tglPulang\": \"24-08-2015\",\n    \"kdDokter\": \"002\",\n    \"kdDiag1\": \"K296\",\n    \"kdDiag2\": null,\n    \"kdDiag3\": null,\n    \"kdPoliRujukInternal\": \"001\",\n    \"kdPoliRujukLanjut\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Kunjungan v2 (Method : PUT)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/kunjungan",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"noKunjungan\": \"0114U1630316Y000001\",\n    \"noKartu\": \"0001101521158\",\n    \"tglDaftar\": null,\n    \"keluhan\": \"keluhan\",\n    \"kdSadar\": \"01\",\n    \"sistole\": 0,\n    \"diastole\": 0,\n    \"beratBadan\": 0,\n    \"tinggiBadan\": 0,\n    \"respRate\": 0,\n    \"heartRate\": 0,\n    \"terapi\": \"catatan\",\n    \"kdProviderRujukLanjut\": \"0112R027\",\n    \"kdStatusPulang\": \"4\",\n    \"tglPulang\": \"16-02-2016\",\n    \"kdDokter\": \"019\",\n    \"kdDiag1\": \"K29.6\",\n    \"kdDiag2\": null,\n    \"kdDiag3\": null,\n    \"kdPoliRujukInternal\": null,\n    \"kdPoliRujukLanjut\": \"TON\",\n    \"kdTacc\": 2,\n    \"alasanTacc\": \"time\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Kunjungan v1 (Method : PUT)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"noKunjungan\": \"1301U0070815Y000007\",\n    \"noKartu\": \"0000029247423\",\n    \"tglDaftar\": null,\n    \"keluhan\": \"keluhan\",\n    \"kdSadar\": \"01\",\n    \"sistole\": 0,\n    \"diastole\": 0,\n    \"beratBadan\": 0,\n    \"tinggiBadan\": 0,\n    \"respRate\": 0,\n    \"heartRate\": 0,\n    \"terapi\": \"catatan\",\n    \"kdProviderRujukLanjut\": \"0195R001\",\n    \"kdStatusPulang\": \"3\",\n    \"tglPulang\": \"23-08-2015\",\n    \"kdDokter\": \"002\",\n    \"kdDiag1\": \"K296\",\n    \"kdDiag2\": null,\n    \"kdDiag3\": null,\n    \"kdPoliRujukInternal\": null,\n    \"kdPoliRujukLanjut\": \"TON\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Kunjungan (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kunjungan/0114A0260815Y000002",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add MCU v2 (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/mcu",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdMCU\": 0,\n    \"noKunjungan\": \"0114U1630316Y000003\",\n    \"kdProvider\": \"0114u163\",\n    \"tglPelayanan\": \"22-03-2016\",\n    \"tekananDarahSistole\": 0,\n    \"tekananDarahDiastole\": 0,\n    \"radiologiFoto\": null,\n    \"darahRutinHemo\": 0,\n    \"darahRutinLeu\": 0,\n    \"darahRutinErit\": 7,\n    \"darahRutinLaju\": 0,\n    \"darahRutinHema\": 0,\n    \"darahRutinTrom\": 0,\n    \"lemakDarahHDL\": 0,\n    \"lemakDarahLDL\": 0,\n    \"lemakDarahChol\": 0,\n    \"lemakDarahTrigli\": 0,\n    \"gulaDarahSewaktu\": 0,\n    \"gulaDarahPuasa\": 0,\n    \"gulaDarahPostPrandial\": 0,\n    \"gulaDarahHbA1c\": 0,\n    \"fungsiHatiSGOT\": 0,\n    \"fungsiHatiSGPT\": 0,\n    \"fungsiHatiGamma\": 0,\n    \"fungsiHatiProtKual\": 0,\n    \"fungsiHatiAlbumin\": 0,\n    \"fungsiGinjalCrea\": 0,\n    \"fungsiGinjalUreum\": 0,\n    \"fungsiGinjalAsam\": 0,\n    \"fungsiJantungABI\": 0,\n    \"fungsiJantungEKG\": null,\n    \"fungsiJantungEcho\": null,\n    \"funduskopi\": null,\n    \"pemeriksaanLain\": null,\n    \"keterangan\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add MCU (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/mcu",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdMCU\": 0,\n    \"noKunjungan\": \"0114U1630815Y000001\",\n    \"kdProvider\": \"1301U007\",\n    \"tglPelayanan\": \"18-08-2015\",\n    \"tekananDarahSistole\": 0,\n    \"tekananDarahDiastole\": 0,\n    \"radiologiFoto\": null,\n    \"darahRutinHemo\": 0,\n    \"darahRutinLeu\": 0,\n    \"darahRutinErit\": 7,\n    \"darahRutinLaju\": 0,\n    \"darahRutinHema\": 0,\n    \"darahRutinTrom\": 0,\n    \"lemakDarahHDL\": 0,\n    \"lemakDarahLDL\": 0,\n    \"lemakDarahChol\": 0,\n    \"lemakDarahTrigli\": 0,\n    \"gulaDarahSewaktu\": 0,\n    \"gulaDarahPuasa\": 0,\n    \"gulaDarahPostPrandial\": 0,\n    \"fungsiHatiSGOT\": 0,\n    \"fungsiHatiSGPT\": 0,\n    \"fungsiHatiGamma\": 0,\n    \"fungsiHatiProtKual\": 0,\n    \"fungsiHatiAlbumin\": 0,\n    \"fungsiGinjalCrea\": 0,\n    \"fungsiGinjalUreum\": 0,\n    \"fungsiGinjalAsam\": 0,\n    \"fungsiJantungABI\": 0,\n    \"fungsiJantungEKG\": null,\n    \"fungsiJantungEcho\": null,\n    \"funduskopi\": null,\n    \"pemeriksaanLain\": null,\n    \"keterangan\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit MCU v2 (Method : PUT)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/mcu",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdMCU\": 33,\n    \"noKunjungan\": \"1301U0070815Y000005\",\n    \"kdProvider\": \"1301U007\",\n    \"tglPelayanan\": \"18-08-2015\",\n    \"tekananDarahSistole\": 20,\n    \"tekananDarahDiastole\": 0,\n    \"radiologiFoto\": null,\n    \"darahRutinHemo\": 0,\n    \"darahRutinLeu\": 0,\n    \"darahRutinErit\": 0,\n    \"darahRutinLaju\": 0,\n    \"darahRutinHema\": 0,\n    \"darahRutinTrom\": 0,\n    \"lemakDarahHDL\": 0,\n    \"lemakDarahLDL\": 0,\n    \"lemakDarahChol\": 0,\n    \"lemakDarahTrigli\": 0,\n    \"gulaDarahSewaktu\": 0,\n    \"gulaDarahPuasa\": 0,\n    \"gulaDarahPostPrandial\": 0,\n    \"fungsiHatiSGOT\": 0,\n    \"fungsiHatiSGPT\": 0,\n    \"fungsiHatiGamma\": 0,\n    \"fungsiHatiProtKual\": 0,\n    \"fungsiHatiAlbumin\": 0,\n    \"fungsiGinjalCrea\": 0,\n    \"fungsiGinjalUreum\": 0,\n    \"fungsiGinjalAsam\": 0,\n    \"fungsiJantungABI\": 0,\n    \"fungsiJantungEKG\": null,\n    \"fungsiJantungEcho\": null,\n    \"funduskopi\": null,\n    \"pemeriksaanLain\": null,\n    \"keterangan\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit MCU (Method : PUT)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/mcu",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdMCU\": 44,\n    \"noKunjungan\": \"0114U1630316Y000003\",\n    \"kdProvider\": \"1301U007\",\n    \"tglPelayanan\": \"22-03-2016\",\n    \"tekananDarahSistole\": 20,\n    \"tekananDarahDiastole\": 0,\n    \"radiologiFoto\": null,\n    \"darahRutinHemo\": 0,\n    \"darahRutinLeu\": 0,\n    \"darahRutinErit\": 0,\n    \"darahRutinLaju\": 0,\n    \"darahRutinHema\": 0,\n    \"darahRutinTrom\": 0,\n    \"lemakDarahHDL\": 0,\n    \"lemakDarahLDL\": 0,\n    \"lemakDarahChol\": 0,\n    \"lemakDarahTrigli\": 0,\n    \"gulaDarahSewaktu\": 0,\n    \"gulaDarahPuasa\": 0,\n    \"gulaDarahPostPrandial\": 0,\n    \"gulaDarahHbA1c\": 0,\n    \"fungsiHatiSGOT\": 0,\n    \"fungsiHatiSGPT\": 0,\n    \"fungsiHatiGamma\": 0,\n    \"fungsiHatiProtKual\": 0,\n    \"fungsiHatiAlbumin\": 0,\n    \"fungsiGinjalCrea\": 0,\n    \"fungsiGinjalUreum\": 0,\n    \"fungsiGinjalAsam\": 0,\n    \"fungsiJantungABI\": 0,\n    \"fungsiJantungEKG\": null,\n    \"fungsiJantungEcho\": null,\n    \"funduskopi\": null,\n    \"pemeriksaanLain\": null,\n    \"keterangan\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get MCU v2 (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/mcu/kunjungan/0114U1630316Y000003",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get MCU (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/mcu/kunjungan/0114U1630316Y000003",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete MCU (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/mcu/34/kunjungan/1301U0070815Y000005",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get DPHO (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/obat/dpho/1301/0/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Obat By Kunjungan (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/obat/kunjungan/1301U0070815Y000004",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Obat (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/obat/kunjungan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdObatSK\": 0,\n    \"noKunjungan\": \"1301U0070815Y000004\",\n    \"racikan\": true,\n    \"kdRacikan\": null,\n    \"obatDPHO\": true,\n    \"kdObat\": \"130199999\",\n    \"signa1\": 3,\n    \"signa2\": 1,\n    \"jmlObat\": 10,\n    \"jmlPermintaan\": 2,\n    \"nmObatNonDPHO\": \"racikan 1 obat 1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Obat (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/obat/19/kunjungan/1301U0070815Y000004",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pendaftaran By Nomor Urut (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/pendaftaran/noUrut/1/tglDaftar/13-08-2015",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pendaftaran Provider (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/pendaftaran/tglDaftar/13-08-2015/0/3\n",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Pendaftaran (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/pendaftaran",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdObatSK\": 0,\n    \"noKunjungan\": \"1301U0070815Y000004\",\n    \"racikan\": true,\n    \"kdRacikan\": null,\n    \"obatDPHO\": true,\n    \"kdObat\": \"130199999\",\n    \"signa1\": 3,\n    \"signa2\": 1,\n    \"jmlObat\": 10,\n    \"jmlPermintaan\": 2,\n    \"nmObatNonDPHO\": \"racikan 1 obat 1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pendaftaran (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/pendaftaran/peserta/0001113569638/tglDaftar/24-08-2015/noUrut/1\n",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Peserta v2 (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/peserta/0001101521158",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Peserta (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/peserta/0000029247423",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Peserta By Jenis Kartu v2 (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v2/peserta/nik/3174016909650001",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Peserta By Jenis Kartu(Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/peserta/nik/3174016909650001",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Poli FKTP (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/poli/fktp/0/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Poli FKTL (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/poli/fktl/0/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Provider Rayonisasi (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/provider/0/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Tindakan (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/tindakan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdTindakanSK\": 0,\n    \"noKunjungan\": \"1301U0070815Y000004\",\n    \"kdTindakan\": \"01007\",\n    \"biaya\": 0,\n    \"keterangan\": null,\n    \"hasil\": 0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Tindakan (Method : POST) copy",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/tindakan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdTindakanSK\": 0,\n    \"noKunjungan\": \"1301U0070815Y000004\",\n    \"kdTindakan\": \"01007\",\n    \"biaya\": 0,\n    \"keterangan\": null,\n    \"hasil\": 0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Tindakan (Method : PUT)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/tindakan",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kdTindakanSK\": 218,\n    \"noKunjungan\": \"1301U0070815Y000004\",\n    \"kdTindakan\": \"01007\",\n    \"biaya\": 0,\n    \"keterangan\": null,\n    \"hasil\": 0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tindakan (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/tindakan/199/kunjungan/1301U0070815Y000005",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Referensi Tindakan(Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/tindakan/1/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Status Pulang (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/statuspulang/rawatInap/true",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Club Prolanis (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/club/01",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Kegiatan Kelompok (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/kegiatan/01-01-2016",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Peserta Kegiatan Kelompok (Method : GET)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/peserta/16020000001",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Kegiatan Kelompok (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/kegiatan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eduId\": null,\n    \"clubId\": 36,\n    \"tglPelayanan\": \"27-03-2016\",\n    \"kdKegiatan\": \"01\",\n    \"kdKelompok\": \"03\",\n    \"materi\": \"materi\",\n    \"pembicara\": \"pembicara\",\n    \"lokasi\": \"lokasi\",\n    \"keterangan\": \"keterangan\",\n    \"biaya\": 20000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Peserta Kegiatan Kelompok (Method : POST)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/peserta",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eduId\": \"16030000009\",\n    \"noKartu\": \"0001101615759\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Kegiatan Kelompok (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/kegiatan/16030000009",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Peserta Kegiatan Kelompok (Method : DELETE)",
+			"request": {
+				"url": "dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/v1/kelompok/peserta/16030000009/0001101615759",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-cons-id",
+						"value": "{{X-cons-id}}",
+						"description": ""
+					},
+					{
+						"key": "X-timestamp",
+						"value": "{{X-Timestamp}}",
+						"description": ""
+					},
+					{
+						"key": "X-signature",
+						"value": "{{X-Signature}}",
+						"description": ""
+					},
+					{
+						"key": "X-Authorization",
+						"value": "{{X-Authorization}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

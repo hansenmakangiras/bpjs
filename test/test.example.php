@@ -231,3 +231,48 @@ dump($pcare);
 // $statusPulang = new \redzjovi\pcare\v1\StatusPulang();
 // $response = $statusPulang->initialize($config)->get(true);
 // dump($response);
+
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->getByClub('01');
+// dump($response);
+
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->getByKegiatan('01-01-2016');
+// dump($response);
+
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->getByPeserta('16020000001');
+// dump($response);
+
+// $data = [
+//     'eduId' => null,
+//     'clubId' => 36,
+//     'tglPelayanan' => '27-03-2016',
+//     'kdKegiatan' => '01',
+//     'kdKelompok' => '03',
+//
+//     'materi' => 'materi',
+//     'pembicara' => 'pembicara',
+//     'lokasi' => 'lokasi',
+//     'keterangan' => 'keterangan',
+//     'biaya' => 20000
+// ];
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->kegiatanAdd($data);
+// dump($response);
+
+// $data = [
+//     'eduId' => '16030000009',
+//     'noKartu' => '0001101615759'
+// ];
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->pesertaAdd($data);
+// dump($response);
+
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->kegiatanDelete('16030000009');
+// dump($response);
+
+// $kelompok = new \redzjovi\pcare\v1\Kelompok();
+// $response = $kelompok->initialize($config)->pesertaDelete('16030000009', '0001101615759');
+// dump($response);

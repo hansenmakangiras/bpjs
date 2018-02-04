@@ -19,7 +19,7 @@ $config = [
 ];
 
 $diagnosa = new \redzjovi\pcare\v1\Diagnosa();
-$response = $diagnosa->initialize($config)->get();
+$response = $diagnosa->get();
 var_dump($response);
 ```
 [reference](http://dvlp.bpjs-kesehatan.go.id:9080/pcare-rest-dev/#p_pengguna)
@@ -319,5 +319,64 @@ $response = $tindakan->get('0', '10');
 ### $tindakan->get($rawatInap = true)
 ```php
 $statusPulang = new \redzjovi\pcare\v1\StatusPulang();
-$response = $statusPulang->initialize($config)->get(true);
+$response = $statusPulang->get(true);
+```
+
+### $kelompok->getByClub($kdJnsKelompok)
+```php
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->getByClub('01');
+```
+
+### $kelompok->getByKegiatan($bulan)
+```php
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->getByKegiatan('01-01-2016');
+```
+
+### $kelompok->getByPeserta($eduId)
+```php
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->getByPeserta('16020000001');
+```
+
+### $kelompok->kegiatanAdd($data)
+```php
+$data = [
+    'eduId' => null,
+    'clubId' => 36,
+    'tglPelayanan' => '27-03-2016',
+    'kdKegiatan' => '01',
+    'kdKelompok' => '03',
+
+    'materi' => 'materi',
+    'pembicara' => 'pembicara',
+    'lokasi' => 'lokasi',
+    'keterangan' => 'keterangan',
+    'biaya' => 20000
+];
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->kegiatanAdd($data);
+```
+
+### $kelompok->pesertaAdd($data)
+```php
+$data = [
+    'eduId' => '16030000009',
+    'noKartu' => '0001101615759'
+];
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->pesertaAdd($data);
+```
+
+### $kelompok->kegiatanDelete($eduId)
+```php
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->kegiatanDelete('16030000009');
+```
+
+### $kelompok->pesertaDelete($eduId, $noKartu)
+```php
+$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$response = $kelompok->pesertaDelete('16030000009', '0001101615759');
 ```
