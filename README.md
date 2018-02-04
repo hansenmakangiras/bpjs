@@ -275,3 +275,43 @@ $response = $poli->fktlGet('0', '10');
 $provider = new \redzjovi\pcare\v1\Provider();
 $response = $provider->get('0', '10');
 ```
+
+### $tindakan->add($data)
+```php
+$data = [
+    'kdTindakanSK' => 0,
+    'noKunjungan' => '1301U0070815Y000004',
+    'kdTindakan' => '01007',
+];
+$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$response = $tindakan->add($data);
+```
+
+### $tindakan->edit($data)
+```php
+$data = [
+    'kdTindakanSK' => 218,
+    'noKunjungan' => '1301U0070815Y000004',
+    'kdTindakan' => '01007',
+];
+$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$response = $tindakan->edit($data);
+```
+
+### $tindakan->delete($kdTindakanSK, $noKunjungan)
+```php
+$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$response = $tindakan->delete('199', '1301U0070815Y000005');
+```
+
+### $tindakan->getByKunjungan($noKunjungan)
+```php
+$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$response = $tindakan->getByKunjungan('1301U0070815Y000005');
+```
+
+### $tindakan->get($start = 0, $limit = 10)
+```php
+$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$response = $tindakan->get('0', '10');
+```

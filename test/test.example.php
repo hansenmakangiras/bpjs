@@ -197,3 +197,33 @@ dump($pcare);
 // $provider = new \redzjovi\pcare\v1\Provider();
 // $response = $provider->initialize($config)->get('0', '10');
 // dump($response);
+
+// $data = [
+//     'kdTindakanSK' => 0,
+//     'noKunjungan' => '1301U0070815Y000004',
+//     'kdTindakan' => '01007',
+// ];
+// $tindakan = new \redzjovi\pcare\v1\Tindakan();
+// $response = $tindakan->initialize($config)->add($data);
+// dump($response);
+
+// $data = [
+//     'kdTindakanSK' => 218,
+//     'noKunjungan' => '1301U0070815Y000004',
+//     'kdTindakan' => '01007',
+// ];
+// $tindakan = new \redzjovi\pcare\v1\Tindakan();
+// $response = $tindakan->initialize($config)->edit($data);
+// dump($response);
+
+// $tindakan = new \redzjovi\pcare\v1\Tindakan();
+// $response = $tindakan->initialize($config)->delete('199', '1301U0070815Y000005');
+// dump($response);
+
+// $tindakan = new \redzjovi\pcare\v1\Tindakan();
+// $response = $tindakan->initialize($config)->getByKunjungan('1301U0070815Y000005');
+// dump($response);
+
+// $tindakan = new \redzjovi\pcare\v1\Tindakan();
+// $response = $tindakan->initialize($config)->get('0', '10');
+// dump($response);
