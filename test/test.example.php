@@ -189,3 +189,7 @@ dump($pcare);
 // $peserta = new \redzjovi\pcare\v1\Peserta();
 // $response = $peserta->initialize($config)->getByJenisKartu('3174016909650001');
 // dump($response);
+
+// $poli = new \redzjovi\pcare\v1\Poli();
+// $response = $poli->initialize($config)->fktlGet('0', '10');
+// dump($response);

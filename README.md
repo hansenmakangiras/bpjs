@@ -257,3 +257,15 @@ $response = $peserta->getByJenisKartu('3174016909650001');
 $peserta = new \redzjovi\pcare\v1\Peserta();
 $response = $peserta->getByJenisKartu('3174016909650001');
 ```
+
+### $poli->fktpGet($start = 0, $limit = 10)
+```php
+$poli = new \redzjovi\pcare\v1\Poli();
+$response = $poli->fktpGet('0', '10');
+```
+
+### $poli->fktlGet($start = 0, $limit = 10)
+```php
+$poli = new \redzjovi\pcare\v1\Poli();
+$response = $poli->fktlGet('0', '10');
+```
