@@ -204,3 +204,32 @@ $response = $obat->kunjunganAdd($data);
 $obat = new \redzjovi\pcare\v1\Obat();
 $response = $obat->kunjunganDelete('13', '1301U0070815Y000004');
 ```
+
+### $pendaftaran->getByNomorUrut($noUrut, $tglDaftar)
+```php
+$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$response = $pendaftaran->getByNomorUrut('1', '13-08-2015');
+```
+
+### $pendaftaran->getByProvider($tglDaftar, $start = 0, $limit = 10)
+```php
+$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$response = $pendaftaran->getByProvider('13-08-2015', '0', '3');
+```
+
+### $pendaftaran->add($data)
+```php
+$data = [
+    'kdProviderPeserta' => '0114A026',
+    'tglDaftar' => '12-08-2015',
+    'noKartu' => '0001113569638',
+];
+$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$response = $pendaftaran->add($data);
+```
+
+### $pendaftaran->delete($noKartu, $tglDaftar, $noUrut)
+```php
+$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$response = $pendaftaran->delete('0001113569638', '24-08-2015', '1');
+```

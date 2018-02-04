@@ -152,3 +152,24 @@ dump($pcare);
 // $obat = new \redzjovi\pcare\v1\Obat();
 // $response = $obat->initialize($config)->kunjunganDelete('13', '1301U0070815Y000004');
 // dump($response);
+
+// $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+// $response = $pendaftaran->initialize($config)->getByNomorUrut('1', '13-08-2015');
+// dump($response);
+
+// $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+// $response = $pendaftaran->initialize($config)->getByProvider('13-08-2015', '0', '3');
+// dump($response);
+
+// $data = [
+//     'kdProviderPeserta' => '0114A026',
+//     'tglDaftar' => '12-08-2015',
+//     'noKartu' => '0001113569638',
+// ];
+// $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+// $response = $pendaftaran->initialize($config)->add($data);
+// dump($response);
+
+// $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+// $response = $pendaftaran->initialize($config)->delete('0001113569638', '24-08-2015', '1');
+// dump($response);
