@@ -173,3 +173,19 @@ dump($pcare);
 // $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
 // $response = $pendaftaran->initialize($config)->delete('0001113569638', '24-08-2015', '1');
 // dump($response);
+
+// $peserta = new \redzjovi\pcare\v2\Peserta();
+// $response = $peserta->initialize($config)->get('0001101521158');
+// dump($response);
+
+// $peserta = new \redzjovi\pcare\v1\Peserta();
+// $response = $peserta->initialize($config)->get('0000029247423');
+// dump($response);
+
+// $peserta = new \redzjovi\pcare\v2\Peserta();
+// $response = $peserta->initialize($config)->getByJenisKartu('3174016909650001');
+// dump($response);
+
+// $peserta = new \redzjovi\pcare\v1\Peserta();
+// $response = $peserta->initialize($config)->getByJenisKartu('3174016909650001');
+// dump($response);

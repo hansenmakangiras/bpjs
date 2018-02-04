@@ -233,3 +233,27 @@ $response = $pendaftaran->add($data);
 $pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
 $response = $pendaftaran->delete('0001113569638', '24-08-2015', '1');
 ```
+
+### $peserta->get($keyword)
+```php
+$peserta = new \redzjovi\pcare\v2\Peserta();
+$response = $peserta->get('0001101521158');
+```
+
+### $peserta->get($keyword)
+```php
+$peserta = new \redzjovi\pcare\v2\Peserta();
+$response = $peserta->get('0000029247423');
+```
+
+### $peserta->getByJenisKartu($keyword)
+```php
+$peserta = new \redzjovi\pcare\v2\Peserta();
+$response = $peserta->getByJenisKartu('3174016909650001');
+```
+
+### $peserta->getByJenisKartu($keyword)
+```php
+$peserta = new \redzjovi\pcare\v1\Peserta();
+$response = $peserta->getByJenisKartu('3174016909650001');
+```
