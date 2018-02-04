@@ -227,3 +227,7 @@ dump($pcare);
 // $tindakan = new \redzjovi\pcare\v1\Tindakan();
 // $response = $tindakan->initialize($config)->get('0', '10');
 // dump($response);
+
+// $statusPulang = new \redzjovi\pcare\v1\StatusPulang();
+// $response = $statusPulang->initialize($config)->get(true);
+// dump($response);

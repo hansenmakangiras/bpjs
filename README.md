@@ -315,3 +315,9 @@ $response = $tindakan->getByKunjungan('1301U0070815Y000005');
 $tindakan = new \redzjovi\pcare\v1\Tindakan();
 $response = $tindakan->get('0', '10');
 ```
+
+### $tindakan->get($rawatInap = true)
+```php
+$statusPulang = new \redzjovi\pcare\v1\StatusPulang();
+$response = $statusPulang->initialize($config)->get(true);
+```
