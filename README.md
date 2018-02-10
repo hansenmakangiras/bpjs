@@ -19,6 +19,7 @@ $config = [
 ];
 
 $diagnosa = new \bpjs\pcare\v1\Diagnosa();
+$diagnosa->initialize($config); // don't forget to initialize config
 $response = $diagnosa->get();
 var_dump($response);
 ```
