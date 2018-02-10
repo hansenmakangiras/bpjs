@@ -1,10 +1,10 @@
 <?php
 
-namespace redzjovi\pcare\v1;
+namespace bpjs\pcare\v1;
 
 use GuzzleHttp\Client;
 
-class Dokter extends \redzjovi\pcare\v1\BpjsIntegration
+class Dokter extends \bpjs\pcare\v1\BpjsIntegration
 {
     public function __construct()
     {

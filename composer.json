@@ -1,5 +1,5 @@
 {
-    "name": "redzjovi/php-pcare",
+    "name": "redzjovi/bpjs",
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^6.3",
@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "redzjovi\\pcare\\": "src/"
+            "bpjs\\pcare\\": "src/"
         }
     }
 }

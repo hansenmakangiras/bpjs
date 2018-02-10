@@ -3,7 +3,7 @@ PHP pcare.
 
 ## Installation
 ```
-composer require redzjovi/php-pcare
+composer require redzjovi/bpjs
 ```
 
 ## How to use
@@ -18,7 +18,7 @@ $config = [
     'kd_aplikasi' => '123',
 ];
 
-$diagnosa = new \redzjovi\pcare\v1\Diagnosa();
+$diagnosa = new \bpjs\pcare\v1\Diagnosa();
 $response = $diagnosa->get();
 var_dump($response);
 ```
@@ -27,37 +27,37 @@ var_dump($response);
 ## Available methods
 ### $diagnosa->get($keyword = 0, $start = 0, $limit = 10)
 ```php
-$diagnosa = new \redzjovi\pcare\v1\Diagnosa();
+$diagnosa = new \bpjs\pcare\v1\Diagnosa();
 $response = $diagnosa->get();
 ```
 
 ### $dokter->get($start = 0, $limit = 10)
 ```php
-$dokter = new \redzjovi\pcare\v1\Dokter();
+$dokter = new \bpjs\pcare\v1\Dokter();
 $response = $dokter->get();
 ```
 
 ### $kesadaran->get()
 ```php
-$kesadaran = new \redzjovi\pcare\v1\Kesadaran();
+$kesadaran = new \bpjs\pcare\v1\Kesadaran();
 $response = $kesadaran->get();
 ```
 
 ### $kunjungan->rujukanGet($noKunjungan)
 ```php
-$kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+$kunjungan = new \bpjs\pcare\v2\Kunjungan();
 $response = $kunjungan->rujukanGet('0114U1630316Y000003');
 ```
 
 ### $kunjungan->rujukanGet($noKunjungan)
 ```php
-$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$kunjungan = new \bpjs\pcare\v1\Kunjungan();
 $response = $kunjungan->rujukanGet('0114U1630316Y000003');
 ```
 
 ### $kunjungan->riwayatGet($noKartu)
 ```php
-$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$kunjungan = new \bpjs\pcare\v1\Kunjungan();
 $response = $kunjungan->rujukanGet('0000029247423');
 ```
 
@@ -68,7 +68,7 @@ $data = [
     'noKartu' => '0001101521158',
     'tglDaftar' => '01-02-2018',
 ];
-$kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+$kunjungan = new \bpjs\pcare\v2\Kunjungan();
 $response = $kunjungan->add($data);
 ```
 
@@ -79,7 +79,7 @@ $data = [
     'noKartu' => '0001101521158',
     'tglDaftar' => '01-02-2018',
 ];
-$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$kunjungan = new \bpjs\pcare\v1\Kunjungan();
 $response = $kunjungan->add($data);
 ```
 
@@ -90,7 +90,7 @@ $data = [
     'noKartu' => '0001101521158',
     'tglDaftar' => '01-02-2018',
 ];
-$kunjungan = new \redzjovi\pcare\v2\Kunjungan();
+$kunjungan = new \bpjs\pcare\v2\Kunjungan();
 $response = $kunjungan->edit($data);
 ```
 
@@ -101,13 +101,13 @@ $data = [
     'noKartu' => '0001101521158',
     'tglDaftar' => '01-02-2018',
 ];
-$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$kunjungan = new \bpjs\pcare\v1\Kunjungan();
 $response = $kunjungan->edit($data);
 ```
 
 ### $kunjungan->delete($noKunjungan)
 ```php
-$kunjungan = new \redzjovi\pcare\v1\Kunjungan();
+$kunjungan = new \bpjs\pcare\v1\Kunjungan();
 $response = $kunjungan->delete('0114A0260815Y000002');
 ```
 
@@ -119,7 +119,7 @@ $data = [
     'kdProvider' => '1301U007',
     'tglPelayanan' => '18-08-2015',
 ];
-$mcu = new \redzjovi\pcare\v2\Mcu();
+$mcu = new \bpjs\pcare\v2\Mcu();
 $response = $mcu->add($data);
 ```
 ### $mcu->add($data)
@@ -130,7 +130,7 @@ $data = [
     'kdProvider' => '1301U007',
     'tglPelayanan' => '18-08-2015',
 ];
-$mcu = new \redzjovi\pcare\v1\Mcu();
+$mcu = new \bpjs\pcare\v1\Mcu();
 $response = $mcu->add($data);
 ```
 
@@ -142,7 +142,7 @@ $data = [
     'kdProvider' => '1301U007',
     'tglPelayanan' => '18-08-2015',
 ];
-$mcu = new \redzjovi\pcare\v2\Mcu();
+$mcu = new \bpjs\pcare\v2\Mcu();
 $response = $mcu->edit($data);
 ```
 
@@ -154,37 +154,37 @@ $data = [
     'kdProvider' => '1301U007',
     'tglPelayanan' => '18-08-2015',
 ];
-$mcu = new \redzjovi\pcare\v1\Mcu();
+$mcu = new \bpjs\pcare\v1\Mcu();
 $response = $mcu->edit($data);
 ```
 
 ### $mcu->kunjunganGet($noKunjungan)
 ```php
-$mcu = new \redzjovi\pcare\v2\Mcu();
+$mcu = new \bpjs\pcare\v2\Mcu();
 $response = $mcu->kunjunganGet('0000029247423');
 ```
 
 ### $mcu->kunjunganGet($noKunjungan)
 ```php
-$mcu = new \redzjovi\pcare\v1\Mcu();
+$mcu = new \bpjs\pcare\v1\Mcu();
 $response = $mcu->kunjunganGet('0000029247423');
 ```
 
 ### $mcu->delete($kdmcu, $noKunjungan)
 ```php
-$mcu = new \redzjovi\pcare\v1\Mcu();
+$mcu = new \bpjs\pcare\v1\Mcu();
 $response = $mcu->delete('34', '1301U0070815Y000005');
 ```
 
 ### $obat->dphoGet($keyword = '', $start = 0, $limit = 10)
 ```php
-$obat = new \redzjovi\pcare\v1\Obat();
+$obat = new \bpjs\pcare\v1\Obat();
 $response = $obat->dphoGet('1301', '0', '3');
 ```
 
 ### $obat->kunjunganGet($noKunjungan)
 ```php
-$obat = new \redzjovi\pcare\v1\Obat();
+$obat = new \bpjs\pcare\v1\Obat();
 $response = $obat->kunjunganGet('1301U0070815Y000004');
 ```
 
@@ -195,25 +195,25 @@ $data = [
     'noKunjungan' => '1301U0070815Y000004',
     'racikan' => true,
 ];
-$obat = new \redzjovi\pcare\v1\Obat();
+$obat = new \bpjs\pcare\v1\Obat();
 $response = $obat->kunjunganAdd($data);
 ```
 
 ### $obat->kunjunganDelete($kdObatSK, $noKunjungan)
 ```php
-$obat = new \redzjovi\pcare\v1\Obat();
+$obat = new \bpjs\pcare\v1\Obat();
 $response = $obat->kunjunganDelete('13', '1301U0070815Y000004');
 ```
 
 ### $pendaftaran->getByNomorUrut($noUrut, $tglDaftar)
 ```php
-$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$pendaftaran = new \bpjs\pcare\v1\Pendaftaran();
 $response = $pendaftaran->getByNomorUrut('1', '13-08-2015');
 ```
 
 ### $pendaftaran->getByProvider($tglDaftar, $start = 0, $limit = 10)
 ```php
-$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$pendaftaran = new \bpjs\pcare\v1\Pendaftaran();
 $response = $pendaftaran->getByProvider('13-08-2015', '0', '3');
 ```
 
@@ -224,55 +224,55 @@ $data = [
     'tglDaftar' => '12-08-2015',
     'noKartu' => '0001113569638',
 ];
-$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$pendaftaran = new \bpjs\pcare\v1\Pendaftaran();
 $response = $pendaftaran->add($data);
 ```
 
 ### $pendaftaran->delete($noKartu, $tglDaftar, $noUrut)
 ```php
-$pendaftaran = new \redzjovi\pcare\v1\Pendaftaran();
+$pendaftaran = new \bpjs\pcare\v1\Pendaftaran();
 $response = $pendaftaran->delete('0001113569638', '24-08-2015', '1');
 ```
 
 ### $peserta->get($keyword)
 ```php
-$peserta = new \redzjovi\pcare\v2\Peserta();
+$peserta = new \bpjs\pcare\v2\Peserta();
 $response = $peserta->get('0001101521158');
 ```
 
 ### $peserta->get($keyword)
 ```php
-$peserta = new \redzjovi\pcare\v2\Peserta();
+$peserta = new \bpjs\pcare\v2\Peserta();
 $response = $peserta->get('0000029247423');
 ```
 
 ### $peserta->getByJenisKartu($keyword)
 ```php
-$peserta = new \redzjovi\pcare\v2\Peserta();
+$peserta = new \bpjs\pcare\v2\Peserta();
 $response = $peserta->getByJenisKartu('3174016909650001');
 ```
 
 ### $peserta->getByJenisKartu($keyword)
 ```php
-$peserta = new \redzjovi\pcare\v1\Peserta();
+$peserta = new \bpjs\pcare\v1\Peserta();
 $response = $peserta->getByJenisKartu('3174016909650001');
 ```
 
 ### $poli->fktpGet($start = 0, $limit = 10)
 ```php
-$poli = new \redzjovi\pcare\v1\Poli();
+$poli = new \bpjs\pcare\v1\Poli();
 $response = $poli->fktpGet('0', '10');
 ```
 
 ### $poli->fktlGet($start = 0, $limit = 10)
 ```php
-$poli = new \redzjovi\pcare\v1\Poli();
+$poli = new \bpjs\pcare\v1\Poli();
 $response = $poli->fktlGet('0', '10');
 ```
 
 ### $provider->get($start = 0, $limit = 10)
 ```php
-$provider = new \redzjovi\pcare\v1\Provider();
+$provider = new \bpjs\pcare\v1\Provider();
 $response = $provider->get('0', '10');
 ```
 
@@ -283,7 +283,7 @@ $data = [
     'noKunjungan' => '1301U0070815Y000004',
     'kdTindakan' => '01007',
 ];
-$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$tindakan = new \bpjs\pcare\v1\Tindakan();
 $response = $tindakan->add($data);
 ```
 
@@ -294,49 +294,49 @@ $data = [
     'noKunjungan' => '1301U0070815Y000004',
     'kdTindakan' => '01007',
 ];
-$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$tindakan = new \bpjs\pcare\v1\Tindakan();
 $response = $tindakan->edit($data);
 ```
 
 ### $tindakan->delete($kdTindakanSK, $noKunjungan)
 ```php
-$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$tindakan = new \bpjs\pcare\v1\Tindakan();
 $response = $tindakan->delete('199', '1301U0070815Y000005');
 ```
 
 ### $tindakan->getByKunjungan($noKunjungan)
 ```php
-$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$tindakan = new \bpjs\pcare\v1\Tindakan();
 $response = $tindakan->getByKunjungan('1301U0070815Y000005');
 ```
 
 ### $tindakan->get($start = 0, $limit = 10)
 ```php
-$tindakan = new \redzjovi\pcare\v1\Tindakan();
+$tindakan = new \bpjs\pcare\v1\Tindakan();
 $response = $tindakan->get('0', '10');
 ```
 
 ### $tindakan->get($rawatInap = true)
 ```php
-$statusPulang = new \redzjovi\pcare\v1\StatusPulang();
+$statusPulang = new \bpjs\pcare\v1\StatusPulang();
 $response = $statusPulang->get(true);
 ```
 
 ### $kelompok->getByClub($kdJnsKelompok)
 ```php
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->getByClub('01');
 ```
 
 ### $kelompok->getByKegiatan($bulan)
 ```php
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->getByKegiatan('01-01-2016');
 ```
 
 ### $kelompok->getByPeserta($eduId)
 ```php
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->getByPeserta('16020000001');
 ```
 
@@ -355,7 +355,7 @@ $data = [
     'keterangan' => 'keterangan',
     'biaya' => 20000
 ];
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->kegiatanAdd($data);
 ```
 
@@ -365,18 +365,18 @@ $data = [
     'eduId' => '16030000009',
     'noKartu' => '0001101615759'
 ];
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->pesertaAdd($data);
 ```
 
 ### $kelompok->kegiatanDelete($eduId)
 ```php
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->kegiatanDelete('16030000009');
 ```
 
 ### $kelompok->pesertaDelete($eduId, $noKartu)
 ```php
-$kelompok = new \redzjovi\pcare\v1\Kelompok();
+$kelompok = new \bpjs\pcare\v1\Kelompok();
 $response = $kelompok->pesertaDelete('16030000009', '0001101615759');
 ```

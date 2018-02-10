@@ -1,10 +1,10 @@
 <?php
 
-namespace redzjovi\pcare\v2;
+namespace bpjs\pcare\v2;
 
 use GuzzleHttp\Client;
 
-class Mcu extends \redzjovi\pcare\v1\BpjsIntegration
+class Mcu extends \bpjs\pcare\v1\BpjsIntegration
 {
     public function __construct()
     {

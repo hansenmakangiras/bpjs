@@ -1,10 +1,10 @@
 <?php
 
-namespace redzjovi\pcare\v2;
+namespace bpjs\pcare\v2;
 
 use GuzzleHttp\Client;
 
-class Peserta extends \redzjovi\pcare\v1\BpjsIntegration
+class Peserta extends \bpjs\pcare\v1\BpjsIntegration
 {
     public function __construct()
     {
